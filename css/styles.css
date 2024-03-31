@@ -132,26 +132,20 @@ color: #2e2f42;;
 
 /* -----MODAL-MENU-----*/
 
-.modal-bacdrop {
+.menu-modal {
     position: fixed;
     top: 0;
-    width: 100vw;
+    left: 0;
+    width: 100%;
     height: 100%;
-    border-color: #fcfcfc;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #fcfcfc;
+    padding: 24px 24px 40px 16px;
 }
 
 .is-hiden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-}
-
-.menu-modal {
-    padding: 24px 24px 40px 16px;
 }
 
 .modal-close-btn {
@@ -166,6 +160,7 @@ color: #2e2f42;;
     background-color: #e7e9fc;
     cursor: pointer;
     margin-left: auto;
+    margin-bottom: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -207,7 +202,6 @@ color: #2e2f42;;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-top: 72px;
 }
 
 .modal-menu-link {
@@ -1075,6 +1069,9 @@ transform: translateY(0);
     display: none;
     }
 
+    .menu-modal {
+    display: none;
+    }
 
     .hero {
     padding: 112px 0;
